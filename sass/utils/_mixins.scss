@@ -1,0 +1,16 @@
+@import './decimals';
+
+@mixin section ($pt: 94px, $pb: 94px){
+    padding-top: $pt;
+    padding-bottom: $pb;
+}
+
+
+@mixin fonts ($fw: 400, $fs: 14px, $lh: 24px, $ls: 0.02em) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: decimal-round($lh / $fs);
+    letter-spacing: $ls;
+}
+    
+

@@ -1,0 +1,17 @@
+// utils
+@import './utils/vars';
+@import './utils/hidden';
+@import './utils/mixins';
+
+// base
+@import './base/reset';
+@import './base/base';
+@import './base/container';
+
+// layouts
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/specifications';
+@import './layouts/activities';
+@import './layouts/team';
+
