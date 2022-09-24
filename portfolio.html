@@ -14,24 +14,24 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="./css/main.min.css">
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
   </head>
   <body>
     <!-- header -->
-   <header class="header">
+    <header class="header">
       <div class="container header__container">
         <nav class="nav">
-          <a class="logo" lang="en" href="./index.html">Web<span class="logo__text logo__text--dark">Studio</span></a>
+          <a class="logo logo--dark" lang="en" href="./index.html">Web<span class="logo__text logo__text--dark">Studio</span></a>
           <ul class="nav__list">
             <li class="nav__item">
               <a class="nav__link" href="./index.html">Студія</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link  current" href="./portfolio.html">Портфоліо</a>
+              <a class="nav__link current" href="./portfolio.html">Портфоліо</a>
             </li>
             <li class="nav__item"><a class="nav__link" href="">Контакти</a></li>
           </ul>
@@ -78,7 +78,7 @@
             </li>
           </ul>
           <!-- Gallery -->
-          <ul class="portfolio__gallery gallery">
+          <ul class="gallery grid">
             <li class="gallery__card card">
               <a href="#" class="card__link">
                 <div class="card__wrap">
@@ -231,10 +231,10 @@
       </section>
     </main>
     <!--footer-->
-  <footer class="footer">
+    <footer class="footer">
       <div class="footer__container container">
         <div class="footer-nav">
-          <a class="logo footer__logo" lang="en" href="./index.html">Web<span class="logo__text logo__text--bright">Studio</span></a>
+          <a class="logo logo--bright" lang="en" href="./index.html">Web<span class="logo__text logo__text--bright">Studio</span></a>
           <address>
             <ul class="list footer__address-list address-list">
               <li class="address-list__item">
@@ -251,42 +251,42 @@
         </div>
         <div class="footer-socials">
           <strong class="footer__strong">Приєднуйтесь</strong>
-          <ul class="footer-socials__list soc-list list">
-            <li class="soc-list__item"
-              ><a href="https://www.instagram.com/" class="soc-list__link"
-                ><svg class="soc-list__icon" width="20" height="20">
+          <ul class="socials list">
+            <li class="socials__item"
+              ><a href="https://www.instagram.com/" class="socials__link socials__link--grey"
+                ><svg class="socials__icon socials__icon--grey" width="20" height="20">
                   <use href="./images/icons.svg#instagram"></use></svg></a
             ></li>
-            <li class="soc-list__item"
-              ><a href="https://twitter.com/" class="soc-list__link"
-                ><svg class="soc-list__icon" width="20" height="20">
+            <li class="socials__item"
+              ><a href="https://twitter.com/" class="socials__link socials__link--grey"
+                ><svg class="socials__icon socials__icon--grey" width="20" height="20">
                   <use href="./images/icons.svg#twitter"></use></svg></a
             ></li>
-            <li class="soc-list__item"
-              ><a href="https://www.facebook.com/" class="soc-list__link"
-                ><svg class="soc-list__icon" width="20" height="20">
+            <li class="socials__item"
+              ><a href="https://www.facebook.com/" class="socials__link socials__link--grey"
+                ><svg class="socials__icon socials__icon--grey" width="20" height="20">
                   <use href="./images/icons.svg#facebook"></use></svg></a
             ></li>
-            <li class="soc-list__item"
-              ><a href="https://www.linkedin.com/" class="soc-list__link"
-                ><svg class="soc-list__icon" width="20" height="20">
+            <li class="socials__item"
+              ><a href="https://www.linkedin.com/" class="socials__link socials__link--grey"
+                ><svg class="socials__icon socials__icon--grey" width="20" height="20">
                   <use href="./images/icons.svg#linkedin"></use></svg></a
             ></li>
           </ul>
         </div>
         <div class="footer-input">
           <strong class="footer__strong">підпишіться на розсилку</strong>
-            <form class="subscription-box" name="footer-subscribe">
-               <label class="subscribtion-box__field">
-                <input class="subscription-box__input" type="email" name="email" placeholder="E-mail" />
-              </label>
-              <button class="subscribtion-box__btn subscribe-btn" type="submit"
+          <form class="subscription-box" name="footer-subscribe">
+            <label class="subscribtion-box__field">
+              <input class="subscription-box__input" type="email" name="email" placeholder="E-mail" />
+            </label>
+            <button class="subscribtion-box__btn subscribe-btn button" type="submit"
               >Підписатися
               <svg class="subscribe-btn__icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
-            </form>
+          </form>
         </div>
       </div>
     </footer>

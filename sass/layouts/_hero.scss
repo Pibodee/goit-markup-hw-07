@@ -12,8 +12,7 @@
   margin-left: auto;
   margin-right: auto;
 
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/background-hero.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-hero.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -42,27 +41,4 @@
   margin-left: auto;
   margin-right: auto;
   padding: 10px 32px;
-  border-color: transparent;
-  border-radius: 4px;
-
-  font-family: inherit;
-  @include fonts (700, 16px, 30px, 00.06em);
-  // font-weight: 700;
-  // font-size: 16px;
-  // line-height: calc(30 / 16);
-  // letter-spacing: 0.06em;
-
-  color: var(--additional-txt-cl);
-  background-color: var(--active-link-txt);
-  cursor: pointer;
-
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus{
-  background-color: var(--main-bt-act);
 }
-}
-

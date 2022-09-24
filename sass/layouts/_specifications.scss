@@ -1,11 +1,14 @@
+/**
+  |============================
+  | Specifications
+  |============================
+*/
+
 .section{
 @include section (94px, 94px);
 }
 
-.specifications{
-  display: flex;
-  gap: 30px;
-}
+
 
 .specifications__item {
   --items: 4;

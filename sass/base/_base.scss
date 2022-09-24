@@ -27,7 +27,9 @@ body {
 }
 
 .grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    list-style: none;
 }
