@@ -13,9 +13,7 @@
   border: 1px solid var(--icons-cl);
   border-radius: 4px;
 
-  transition-property: border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   @include transition (border);
 
   &:hover,
   &:focus {
@@ -29,7 +27,5 @@
 .client-grid__icon {
   fill: var(--icons-cl);
 
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ @include transition (fill);
 }

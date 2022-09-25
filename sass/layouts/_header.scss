@@ -46,9 +46,7 @@
   text-decoration: none;
   color: currentColor;
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ @include transition (color);
 
   &:hover,
   &:focus {
@@ -89,16 +87,11 @@
   gap: 10px;
 
   text-decoration: none;
-  @include fonts();
-  // letter-spacing: 0.02em;
-  // font-size: 14px;
-  // line-height: calc(16.41 / 14);
-
+  @include fonts($lh: 16px);
   color: var(--secondary-txt-cl);
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition (color);
+
 
   &:hover,
   &:focus {
@@ -112,7 +105,5 @@
   fill: none;
   stroke: var(--secondary-txt-cl);
 
-  transition-property: stroke;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   @include transition (stroke);
 }

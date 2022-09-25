@@ -8,9 +8,8 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
 
-  transition-property: visibility, opacity;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition (visibility, opacity);
+
 }
 
 .backdrop.is-hidden {
@@ -34,13 +33,6 @@
 }
 
 
-.close-btn__icon {
-  fill: currentColor;
-
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 
 .close-btn {
@@ -51,19 +43,28 @@
   width: 30px;
   height: 30px;
 
-  color: black;
   display: flex;
   align-items: center;
   justify-content: center;
 
+  color: var(--main-link-cl);
   border-radius: 50%;
   border: 1px solid var(--close-btn-border);
   cursor: pointer;
+  outline: transparent;
+
+  @include transition (color, border-color) ;
 
   &:hover,
   &:focus{
     color: var(--active-link-txt);
+    border-color: var(--active-link-txt);
   }
+
+}
+
+.close-btn__icon {
+  fill: currentColor;
 
 }
 
