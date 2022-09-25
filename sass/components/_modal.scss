@@ -33,6 +33,16 @@
   border-radius: 4px;
 }
 
+
+.close-btn__icon {
+  fill: currentColor;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
 .close-btn {
   position: absolute;
   top: 8px;
@@ -41,6 +51,7 @@
   width: 30px;
   height: 30px;
 
+  color: black;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,20 +59,11 @@
   border-radius: 50%;
   border: 1px solid var(--close-btn-border);
   cursor: pointer;
-}
-
-.close-btn__icon {
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
-  &:focus {
-    fill: var(--active-link-txt);
+  &:focus{
+    color: var(--active-link-txt);
   }
+
 }
 
-.close-btn__icon:hover,
-.close-btn__icon:focus {
-  fill: var(--active-link-txt);
-}
